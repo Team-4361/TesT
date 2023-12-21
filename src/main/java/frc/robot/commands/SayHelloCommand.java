@@ -4,6 +4,7 @@
 
 package frc.robot.commands;
 
+import com.revrobotics.CANSparkMax;
 import edu.wpi.first.wpilibj2.command.CommandBase;
 import frc.robot.Robot;
 
@@ -11,6 +12,7 @@ import frc.robot.Robot;
  * An example command that uses an example subsystem.
  */
 public class SayHelloCommand extends CommandBase {
+
     public SayHelloCommand() {
         // Note we need to "require" this system. Now only ONE command can run
         // per Subsystem.
@@ -37,6 +39,7 @@ public class SayHelloCommand extends CommandBase {
     // Returns true when the command should end.
     @Override
     public boolean isFinished() {
+        // Runs forever! Try to avoid this!
         return false;
     }
 }

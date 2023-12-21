@@ -12,6 +12,10 @@ public class PrintSubsystem extends SubsystemBase {
      */
     public PrintSubsystem() {}
 
+    // Create a new PUBLIC method which prints out any text you want.
+    // Example: "public void doIt()"
+    // The print method is "System.out.println(INSERT TEXT IN QUOTES)"
+
     public void sayHello() {
         System.out.println("Hello!");
     }
@@ -20,16 +24,8 @@ public class PrintSubsystem extends SubsystemBase {
         System.out.println("Bye!");
     }
 
-    // Add some more methods here and create a command for it!
-    // Duplicate "SayHelloCommand" as an example.
-
     @Override
     public void periodic() {
         // This method will be called once per scheduler run
-    }
-
-    @Override
-    public void simulationPeriodic() {
-        // This method will be called once per scheduler run during simulation
     }
 }
